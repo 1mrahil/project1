@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+h2 {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+body {
+    background-color: #2D93AD;
+    color: #DBD56E;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-area {
+    font-size: 18px;
+    display: grid;
+    grid-area: userText;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.grid-container {
+    grid-area: userInput;
+}
+
+ul {
+    max-width: 93%;
+    text-align:left;
+    list-style-type: none;
+    
+}
+
+ul li {
+    border: 2px  #7D7C84 solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    color:  #7D7C84; 
+    background-color: whitesmoke;
+    transition: 0.2s;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+ul li:hover {
+    opacity:0.7;
+}
+
+ul li.checked {
+   text-decoration: line-through;
+   background-color: #7D7C84;
+   color: whitesmoke;
+}
+
+ul li.checked::before{
+    content: '';
+    position: absolute;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    font-size: 28px;
+    top: 0;
+    right: 0;
+    padding: 6px 0px 6px 0px;
+    width: 42px;
+    height: 42px;
+}
+
+.close:hover {
+    color: red;
+    transition: color 0.7s ease-in-out;
+ }
+
+.input-text {
+    content: "";
+    clear: both;
+}
+
+#enter {
+    background-color: #7D7C84;
+    font-size: 22px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px 15px;
+    transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+    -o-transition: all 0.75 ease;
+    font-weight: normal;
+}
+
+#enter:hover {
+    color: #DBD56E;
+    transition: color 0.7s ease-in-out;
+    background:rgb(169,169,169, 0.9);
+}
+
+input {
+    color: #7D7C84;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 12px;
+    min-width: 75%;
+    border: none;
+}
+
+#topBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 1; 
+    border: none; 
+    outline: none; 
+    background-color: #DE8F6E;
+    color: whitesmoke; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 18px;  
+  }
+  
+  #topBtn:hover {
+    background-color:#7D7C84;
+    transition: color 0.7s ease-in-out;
+  } 

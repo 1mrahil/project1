@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-do list</title>
+</head>
+
+<body>
+    <div class="input-text">
+        <h2>My to-do list</h2>
+        <p>Enter item below and click the pencil icon to add item</p>
+        <p style="color: #88AB75;">Click the item to mark it as complete</p>
+        <p style="color: #DE8F6E;">Click the "X" to delete an item</p>
+    </div>
+    <div class="input-area">
+        <div>
+            <input type="text" name="userInput" id="userInput" placeholder="New item" maxlength="40">
+            <button id="enter" onclick="newElement();"><i class="fas fa-pencil-alt"></i></button>
+            <div class="grid-container">
+                <ul id="myList">
+                    <li class="checked">Clean house<span class="close">	&times</span></li>
+                    <li class="checked">Buy groceries<span class="close">&times</span></li>
+                    <li>Finish mini project<span class="close">	&times</span></li>
+                    <li>Demo<span class="close">	&times</span></li>
+                    <li>Q&A<span class="close">	&times</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
